@@ -1,26 +1,8 @@
-print("Welcome the National Temperature Center!")
-print("We will examine temperatures and tell you if it is hot or cold.")
-temp = float(input("What is the temperature today?"))
-print("You said it is", str(temp), "celsius")
 
-if 10 <= temp <= 30:
-    print("The weather seems good today.")
-    print("How about you go outside?")
+rows = int(input("Enter the amount of rows you want to use"))
+columns = int(input("Enter the amount of columns you want to use"))
+symbols = str(input("Enter a symbol to use"))
 
-elif -10 <= temp <= 1:
-    print("The weather is very cold today")
-    print("Do not go outside")
-
-elif 30 >= temp <= 60:
-    print("It's very hot today.")
-    print("Under only severe circumstances must you go outside.")
-
-elif 60 >= temp:
-    print("It must be anarchy where you are.")
-
-elif -30 >= temp:
-    print("Do you live in Antarctica?")
-
-
-else:
-    print("It is cold.")
+for i in range(rows):
+    for j in range(columns):
+        print(symbols,end="")
